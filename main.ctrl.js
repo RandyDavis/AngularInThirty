@@ -21,12 +21,12 @@ angular.module('app')
       },
       {
         title: 'Banshee',
-        year: 2013,
+        year: '2013',
         favorite: true
       },
       {
         title: 'Greys Anatomy',
-        year: 2005,
+        year: '2005',
         favorite: false
       }
     ];
@@ -57,6 +57,11 @@ angular.module('app')
       },
     ];
     vm.order = vm.orders[0];
+    vm.new = {};
+    vm.addShow = function() {
+      vm.shows.push(vm.new);
+      vm.new = {};
+    };
   });
 
 
