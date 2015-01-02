@@ -57,6 +57,11 @@ angular.module('app')
       }
     ];
     vm.order = vm.orders[0];
+    vm.new = {};
+    vm.addShow = function() {
+      vm.shows.push(vm.new);
+      vm.new = {};
+    };
   });
 
 
