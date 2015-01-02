@@ -17,6 +17,13 @@
       </span>
       <input type="text" class="form-control" ng-model="main.searchInput">
     </div>
+    <h3>A list of TV Shows</h3>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="show in main.shows">
+        {{ show.title }}
+        <span class="badge">{{ show.year }}</span>
+      </li>
+    </ul>
   </div>
 
   
