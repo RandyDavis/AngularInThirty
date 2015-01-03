@@ -62,6 +62,7 @@ angular.module('app')
       vm.shows.push(vm.new);
       vm.new = {};
     };
+    // new comment
   });
 
 
